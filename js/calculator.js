@@ -21,25 +21,25 @@ function claculator(btn){
 			inner.innerHTML="0";
 			break;
 		case ".":
+		if(flag==false){
+			inner.innerHTML="";
+			flag=true;
+		}
 			inner.innerHTML = inner.innerHTML + num;
 			break;
-		case "1":
-		case "2":
-		case "3":
-		case "4":
-		case "5":
-		case "6":
-		case "7":
-		case "8":
-		case "9":
-			if(inner.innerHTML=="0"||flag==false){
-				inner.innerHTML="";
-				flag=true;
-			}
+		case "+":
+		case "-":
+		case "*":
+		case "/":
+		case "%":
+		if(flag==false){
+			inner.innerHTML="";
+			flag=true;
+		}	
 			inner.innerHTML = inner.innerHTML + num;
 			break;
 		default:
-		if(flag==false){
+		if(flag==false||inner.innerHTML=='0'){
 			inner.innerHTML="";
 			flag=true;
 		}
