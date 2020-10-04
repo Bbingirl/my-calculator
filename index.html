@@ -2,13 +2,47 @@
 <html>
 	<head>
 		<meta charset="utf-8" />
-		<title></title>
+		<title>我的计算器</title>
+		<link rel="stylesheet" type="text/css" href="css/calculator.css"/>
+		<script src="js/calculator.js" type="text/javascript" charset="utf-8"></script>
 	</head>
-	<body style="text-align: center;font-size: 50px;background-color: green;">
-		你是一个_____
-		<br />
-		A.<a style="text-decoration: none;color: red;line-height: 100%;" href="javascript:while(1){alert('让你自恋')}"><input type="button" id="" value="帅哥" /></a>
-	    <br />
-	    B.<input type="button" value="丑逼" />
+	<body>
+		<div id="boder">
+			<p id="inner">0</p>
+			<div>
+				<input type="button" value="(" onclick="claculator(this)"/>
+				<input type="button" value=")" onclick="claculator(this)"/>
+				<input type="button" value="%" onclick="claculator(this)"/>
+				<input type="button" value="C" onclick="claculator(this)"/>
+			</div>
+			
+			<div>
+				<input type="button" value="1" onclick="claculator(this)"/>
+				<input type="button" value="2" onclick="claculator(this)"/>
+				<input type="button" value="3" onclick="claculator(this)"/>
+				<input type="button" value="+" onclick="claculator(this)"/>
+			</div>
+			
+			<div>
+				<input type="button" value="4" onclick="claculator(this)"/>
+				<input type="button" value="5" onclick="claculator(this)"/>
+				<input type="button" value="6" onclick="claculator(this)"/>
+				<input type="button" value="-" onclick="claculator(this)"/>
+			</div>
+			
+			<div>
+				<input type="button" value="7" onclick="claculator(this)"/>
+				<input type="button" value="8" onclick="claculator(this)"/>
+				<input type="button" value="9" onclick="claculator(this)"/>
+				<input type="button" value="*" onclick="claculator(this)"/>
+			</div>
+			
+			<div>
+				<input type="button" value="." onclick="claculator(this)"/>
+				<input type="button" value="0" onclick="claculator(this)"/>
+				<input type="button" value="=" onclick="claculator(this)"/>
+				<input type="button" value="/" onclick="claculator(this)"/>
+			</div>
+		</div>
 	</body>
 </html>
